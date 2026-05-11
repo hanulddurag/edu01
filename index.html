@@ -66,8 +66,31 @@
             border-radius: 50%;
         }
 
+        .btn-action {
+            transition: all 0.2s ease;
+        }
+        .btn-action:hover {
+            transform: scale(1.05);
+            filter: brightness(1.1);
+        }
+
+        /* 내비게이션 바 버튼 스타일 */
+        .nav-btn {
+            padding: 0.25rem 0.75rem;
+            border-radius: 0.5rem;
+            background-color: #f1f5f9;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+        .nav-btn:hover {
+            background-color: #e2e8f0;
+            color: #1e40af;
+        }
+
         @media (max-width: 768px) {
-            .hero-section { height: 40vh; }
+            .hero-section { height: 50vh; }
         }
     </style>
 </head>
@@ -77,19 +100,33 @@
     <header class="hero-section">
         <div class="px-4">
             <h1 class="text-3xl md:text-5xl font-bold mb-4">독도 영유권 분석 및 외교적 대응 전략</h1>
-            <p class="text-lg md:text-xl font-light max-w-2xl mx-auto">역사적·법적 정당성 확보와 주권 수호를 위한 국가 전략 보고서</p>
+            <p class="text-lg md:text-xl font-light max-w-2xl mx-auto mb-8">역사적·법적 정당성 확보와 주권 수호를 위한 국가 전략 보고서</p>
+            
+            </div>
         </div>
     </header>
 
-    <!-- Sticky Navigation -->
+    <!-- Sticky Navigation (버튼 추가됨) -->
     <nav class="sticky-nav py-4">
-        <div class="max-w-7xl mx-auto px-4 flex overflow-x-auto whitespace-nowrap space-x-6 text-sm font-medium text-gray-600 no-scrollbar">
-            <a href="#intro" class="hover:text-blue-600">서론</a>
-            <a href="#legal" class="hover:text-blue-600">국제법적 고찰</a>
-            <a href="#control" class="hover:text-blue-600">실효적 지배</a>
-            <a href="#diplomacy" class="hover:text-blue-600">외교 합의 변천</a>
-            <a href="#distortion" class="hover:text-blue-600">교육 왜곡 현황</a>
-            <a href="#strategy" class="hover:text-blue-600 text-blue-600 font-bold">대응 전략</a>
+        <div class="max-w-7xl mx-auto px-4 flex items-center justify-between">
+            <div class="flex overflow-x-auto whitespace-nowrap space-x-6 text-sm font-medium text-gray-600 no-scrollbar items-center">
+                <a href="#intro" class="hover:text-blue-600">서론</a>
+                <a href="#legal" class="hover:text-blue-600">국제법적 고찰</a>
+                <a href="#control" class="hover:text-blue-600">실효적 지배</a>
+                <a href="#diplomacy" class="hover:text-blue-600">외교 합의 변천</a>
+                <a href="#distortion" class="hover:text-blue-600">교육 왜곡 현황</a>
+                <a href="#strategy" class="hover:text-blue-600">대응 전략</a>
+                
+                <!-- 추가된 이동 버튼 -->
+                <div class="flex items-center space-x-2 ml-4 border-l pl-4 border-gray-200">
+                    <a href="./01/index.html" class="nav-btn text-xs font-bold text-gray-700 shadow-sm">
+                        <i class="fas fa-calendar-alt text-blue-500"></i> 독도연표
+                    </a>
+                    <a href="./02/02.html" class="nav-btn text-xs font-bold text-gray-700 shadow-sm">
+                        <i class="fas fa-book text-blue-500"></i> 독도용어
+                    </a>
+                </div>
+            </div>
         </div>
     </nav>
 
@@ -288,14 +325,17 @@
 
             sections.forEach((section) => {
                 const sectionTop = section.offsetTop;
-                if (pageYOffset >= sectionTop - 120) {
+                if (window.pageYOffset >= sectionTop - 120) {
                     current = section.getAttribute("id");
                 }
             });
 
             navLinks.forEach((a) => {
+                // Skip navigation for direct links (timeline, terms)
+                if (a.getAttribute("href").startsWith("./")) return;
+
                 a.classList.remove("text-blue-600", "font-bold");
-                if (a.getAttribute("href").includes(current)) {
+                if (a.getAttribute("href").includes(current) && current !== "") {
                     a.classList.add("text-blue-600", "font-bold");
                 }
             });
