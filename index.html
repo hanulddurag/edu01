@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>독도 영유권 분석 및 외교 전략 보고서</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap');
+        
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            scroll-behavior: smooth;
+            background-color: #f8fafc;
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1599388054000-0e7d58a09f3e?auto=format&fit=crop&q=80&w=1600') no-repeat center center/cover;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .sticky-nav {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(5px);
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .card {
+            background: white;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .highlight-blue { border-left: 4px solid #2563eb; }
+        .highlight-red { border-left: 4px solid #dc2626; }
+
+        .timeline-item {
+            position: relative;
+            padding-left: 2rem;
+            border-left: 2px solid #e2e8f0;
+            margin-bottom: 2rem;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -9px;
+            top: 0;
+            width: 16px;
+            height: 16px;
+            background: #2563eb;
+            border-radius: 50%;
+        }
+
+        @media (max-width: 768px) {
+            .hero-section { height: 40vh; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="px-4">
+            <h1 class="text-3xl md:text-5xl font-bold mb-4">독도 영유권 분석 및 외교적 대응 전략</h1>
+            <p class="text-lg md:text-xl font-light max-w-2xl mx-auto">역사적·법적 정당성 확보와 주권 수호를 위한 국가 전략 보고서</p>
+        </div>
+    </header>
+
+    <!-- Sticky Navigation -->
+    <nav class="sticky-nav py-4">
+        <div class="max-w-7xl mx-auto px-4 flex overflow-x-auto whitespace-nowrap space-x-6 text-sm font-medium text-gray-600 no-scrollbar">
+            <a href="#intro" class="hover:text-blue-600">서론</a>
+            <a href="#legal" class="hover:text-blue-600">국제법적 고찰</a>
+            <a href="#control" class="hover:text-blue-600">실효적 지배</a>
+            <a href="#diplomacy" class="hover:text-blue-600">외교 합의 변천</a>
+            <a href="#distortion" class="hover:text-blue-600">교육 왜곡 현황</a>
+            <a href="#strategy" class="hover:text-blue-600 text-blue-600 font-bold">대응 전략</a>
+        </div>
+    </nav>
+
+    <main class="max-w-5xl mx-auto px-4 py-12 space-y-20">
+
+        <!-- 1. 서론 -->
+        <section id="intro" class="scroll-mt-24">
+            <div class="flex items-center space-x-3 mb-6">
+                <i class="fas fa-file-alt text-2xl text-blue-600"></i>
+                <h2 class="text-2xl font-bold text-gray-800">1. 서론: 전략적 위상</h2>
+            </div>
+            <div class="card p-8 highlight-blue leading-relaxed text-gray-700">
+                <p class="mb-4">
+                    독도 문제는 단순한 영토 분쟁을 넘어 <strong>'식민지 과거사 청산'</strong>과 <strong>'국제법적 권원 확보'</strong>라는 두 축으로 정의됩니다. 이는 동북아시아 해양 안보의 패권을 결정짓는 전략적 요충지로서의 성격을 띱니다.
+                </p>
+                <div class="bg-blue-50 p-6 rounded-lg border border-blue-100 flex flex-col md:flex-row items-center justify-around">
+                    <div class="text-center mb-4 md:mb-0">
+                        <span class="block text-4xl font-bold text-blue-600">62%</span>
+                        <span class="text-sm text-gray-600">한국인: 관계 개선 최우선 과제</span>
+                    </div>
+                    <div class="text-gray-300 hidden md:block">|</div>
+                    <div class="text-center">
+                        <span class="block text-4xl font-bold text-gray-400">37%</span>
+                        <span class="text-sm text-gray-600">일본인: 정치적 대화 중시 (독도 저순위)</span>
+                    </div>
+                </div>
+                <p class="mt-4 text-sm text-gray-500">*2010년 KBS-NHK 공동 여론조사 기준</p>
+            </div>
+        </section>
+
+        <!-- 2. 국제법적 고찰 -->
+        <section id="legal" class="scroll-mt-24">
+            <div class="flex items-center space-x-3 mb-6">
+                <i class="fas fa-gavel text-2xl text-blue-600"></i>
+                <h2 class="text-2xl font-bold text-gray-800">2. 전후 국제 질서와 법적 근거</h2>
+            </div>
+            <div class="overflow-x-auto card">
+                <table class="w-full text-left border-collapse">
+                    <thead class="bg-gray-50 border-b">
+                        <tr>
+                            <th class="p-4 font-bold text-gray-700">문건명</th>
+                            <th class="p-4 font-bold text-gray-700">주요 내용</th>
+                            <th class="p-4 font-bold text-gray-700">전략적 해석</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y text-sm">
+                        <tr>
+                            <td class="p-4 font-semibold">SCAPIN 제677호</td>
+                            <td class="p-4 italic">독도를 'TAKE'로 표시하여 행정권 배제</td>
+                            <td class="p-4">연합국이 한국 영토로 인지한 초기 법적 권원</td>
+                        </tr>
+                        <tr class="bg-blue-50/30">
+                            <td class="p-4 font-semibold">강화조약 1차 초안</td>
+                            <td class="p-4">리앙쿠르암(독도) 권리 포기 명시</td>
+                            <td class="p-4">전후 처리 핵심 영토로 명확히 인식</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 font-semibold">연합국 합의서</td>
+                            <td class="p-4">48개국이 독도를 한국 영토로 처리</td>
+                            <td class="p-4">국제 사회의 '확립된 의도' 입증</td>
+                        </tr>
+                        <tr class="bg-red-50/30">
+                            <td class="p-4 font-semibold">샌프란시스코 조약</td>
+                            <td class="p-4">독도 명문화 누락</td>
+                            <td class="p-4 text-red-600 font-medium">로비에 의한 전략적 모호성 (권원 무효화 불가)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- 3. 실효적 지배 -->
+        <section id="control" class="scroll-mt-24">
+            <div class="flex items-center space-x-3 mb-6">
+                <i class="fas fa-shield-alt text-2xl text-blue-600"></i>
+                <h2 class="text-2xl font-bold text-gray-800">3. 실효적 지배의 확립</h2>
+            </div>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="card p-6 border-t-4 border-blue-500">
+                    <h3 class="text-lg font-bold mb-3">이승만 라인 (평화선)</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        1952년 선포를 통해 독도 기점 8해리 영해 간주 및 경찰권 행사. 독도의용수비대의 활동으로 주권 수호의 보루 확립.
+                    </p>
+                </div>
+                <div class="card p-6 border-t-4 border-red-500">
+                    <h3 class="text-lg font-bold mb-3">일본의 '적대적 인지'</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        1953년 일본 외무성 구술서(No. 216/A2)에서 한국의 사격 및 단속에 항의. 이는 역설적으로 한국의 <strong>행정적 현존</strong>을 법적으로 인정한 근거임.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. 외교 합의 -->
+        <section id="diplomacy" class="scroll-mt-24">
+            <div class="flex items-center space-x-3 mb-6">
+                <i class="fas fa-handshake text-2xl text-blue-600"></i>
+                <h2 class="text-2xl font-bold text-gray-800">4. 한일 외교 합의의 명암</h2>
+            </div>
+            <div class="space-y-6">
+                <div class="timeline-item">
+                    <h4 class="font-bold text-lg text-blue-700">1965년 독도 밀약</h4>
+                    <p class="text-gray-600 text-sm mt-2 italic">"영유권 평행론 및 현상 유지(Status Quo) 합의"</p>
+                    <p class="text-gray-600 text-sm mt-1">30년간 갈등 소강 상태를 유지했으나 일본에 재점화 빌미 제공</p>
+                </div>
+                <div class="timeline-item">
+                    <h4 class="font-bold text-lg text-red-700">1998년 신한일 어업협정</h4>
+                    <p class="text-gray-600 text-sm mt-2 italic">"배타적경제수역(EEZ) 내 중간수역 설정"</p>
+                    <p class="text-gray-600 text-sm mt-1">독도를 중간수역에 포함시킴으로써 영유권 지위 훼손 우려 발생 및 일본 내 어민 불만 고조</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. 교육 왜곡 -->
+        <section id="distortion" class="scroll-mt-24">
+            <div class="flex items-center space-x-3 mb-6">
+                <i class="fas fa-book-open text-2xl text-red-600"></i>
+                <h2 class="text-2xl font-bold text-gray-800">5. 갈등의 재점화: 교육 왜곡</h2>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="card p-6">
+                    <h4 class="font-bold mb-4 text-center border-b pb-2">중학교 교과서 (2011)</h4>
+                    <div class="relative pt-1">
+                        <div class="flex mb-2 items-center justify-between">
+                            <div><span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-600 bg-blue-200">영토 기술 비율</span></div>
+                            <div class="text-right"><span class="text-xs font-semibold inline-block text-blue-600">77% (14/18)</span></div>
+                        </div>
+                        <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-gray-200">
+                            <div style="width:77%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-blue-500"></div>
+                        </div>
+                    </div>
+                    <p class="text-xs text-gray-500 text-center italic">'불법 점거' 표현 대거 등장</p>
+                </div>
+                <div class="card p-6">
+                    <h4 class="font-bold mb-4 text-center border-b pb-2">초등학교 교과서 (2015)</h4>
+                    <div class="relative pt-1">
+                        <div class="flex mb-2 items-center justify-between">
+                            <div><span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-red-600 bg-red-200">영토 기술 비율</span></div>
+                            <div class="text-right"><span class="text-xs font-semibold inline-block text-red-600">100% (4/4)</span></div>
+                        </div>
+                        <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-gray-200">
+                            <div style="width:100%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-red-500"></div>
+                        </div>
+                    </div>
+                    <p class="text-xs text-gray-500 text-center italic">차세대 인식의 근본적 오염 위험</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. 대응 전략 -->
+        <section id="strategy" class="scroll-mt-24">
+            <div class="flex items-center space-x-3 mb-6">
+                <i class="fas fa-paper-plane text-2xl text-blue-600"></i>
+                <h2 class="text-2xl font-bold text-gray-800">6. 전략적 외교 대응 방향</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="card p-6 bg-blue-600 text-white">
+                    <div class="text-3xl mb-4"><i class="fas fa-balance-scale"></i></div>
+                    <h4 class="font-bold mb-2">법적 권원 고도화</h4>
+                    <p class="text-sm opacity-90">SCAPIN 677호 등 국제 사회가 합의한 '확립된 의도'를 국제 홍보 전략으로 활용</p>
+                </div>
+                <div class="card p-6 bg-slate-800 text-white">
+                    <div class="text-3xl mb-4"><i class="fas fa-ban"></i></div>
+                    <h4 class="font-bold mb-2">분쟁 지역화 차단</h4>
+                    <p class="text-sm opacity-90">ICJ 회부 거부 기조 유지 및 일본 논리의 모순을 찌르는 '적대적 인지' 사료 활용</p>
+                </div>
+                <div class="card p-6 bg-teal-600 text-white">
+                    <div class="text-3xl mb-4"><i class="fas fa-users"></i></div>
+                    <h4 class="font-bold mb-2">미래지향적 공감대</h4>
+                    <p class="text-sm opacity-90">시민사회 연대를 통한 공동교과서 제작 및 인권·정의의 관점에서의 국제 사회 호소</p>
+                </div>
+            </div>
+            
+            <div class="mt-12 p-8 bg-gray-100 rounded-2xl border-2 border-dashed border-gray-300 text-center">
+                <p class="text-xl font-bold text-gray-800 italic">
+                    "독도는 국가 주권의 타협 불가능한 근간(Uncompromising Pillar)입니다."
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-900 text-gray-400 py-12 text-center text-sm">
+        <div class="max-w-5xl mx-auto px-4">
+            <p class="mb-4">본 보고서는 역사적 사료와 국제법적 근거를 바탕으로 작성되었습니다.</p>
+            <p>&copy; 2024 독도 주권 수호 연구팀. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple scroll spy for navigation highlight
+        window.addEventListener('scroll', () => {
+            let current = "";
+            const sections = document.querySelectorAll("section");
+            const navLinks = document.querySelectorAll("nav a");
+
+            sections.forEach((section) => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 120) {
+                    current = section.getAttribute("id");
+                }
+            });
+
+            navLinks.forEach((a) => {
+                a.classList.remove("text-blue-600", "font-bold");
+                if (a.getAttribute("href").includes(current)) {
+                    a.classList.add("text-blue-600", "font-bold");
+                }
+            });
+        });
+    </script>
+</body>
+</html>
